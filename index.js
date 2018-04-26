@@ -10,7 +10,7 @@ function simplyFormatCurrency (numVal, locale, opts) {
 }
 
 function simplyFormatCurrency (numVal) {
-  return isNaN(parseFloat(numVal)) ? '$0.00' : parseFloat(numVal).toLocaleString('en-AU', {style: 'currency', currency: 'AUD'});
+  return isNaN(parseFloat(numVal)) ? '$0.00' : parseFloat(numVal).toLocaleString('en-AU', {style: 'currency', currency: 'USD'});
 }
 
 module.exports = simplyFormatCurrency;
