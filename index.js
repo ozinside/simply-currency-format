@@ -5,3 +5,7 @@ exports.formatCurrency = function (numVal) {
 exports.formatCurrencyNum = function (numVal) {
   return isNaN(parseFloat(numVal)) ? '0.00' : parseFloat(numVal).toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 };
+
+exports.formatQuantityNum = function (numVal) {
+  return isNaN(parseFloat(numVal)) ? '0' : parseFloat(numVal).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+};
